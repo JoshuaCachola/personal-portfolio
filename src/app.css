@@ -9,15 +9,6 @@
 	display: block;
 	background: red;
 	top: 20px;
-	right: 20px;
-}
-
-.hamburger:before {
-	top: -10px;
-}
-
-.hamburger:after {
-	bottom: -10px;
 }
 
 .hamburger:before,
@@ -28,4 +19,12 @@
 	background: red;
 	position: absolute;
 	display: block;
+}
+
+.hamburger:before {
+	top: -10px;
+}
+
+.hamburger:after {
+	bottom: -10px;
 }
