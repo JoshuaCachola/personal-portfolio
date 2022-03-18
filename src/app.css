@@ -46,6 +46,14 @@ li:hover {
 	animation: 1s ease-in-out fade-in;
 }
 
+.freehand {
+	font-family: 'Freehand', cursive;
+}
+
+.assistant {
+	font-family: 'Assistant', sans-serif;
+}
+
 @keyframes slide-from-top {
 	0% {
 		transform: translateY(-200%);
