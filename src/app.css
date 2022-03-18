@@ -42,6 +42,10 @@ li:hover {
 	animation: 1s ease-out slide-from-top;
 }
 
+.side-menu {
+	animation: 1s ease-in-out fade-in;
+}
+
 @keyframes slide-from-top {
 	0% {
 		transform: translateY(-200%);
@@ -50,6 +54,16 @@ li:hover {
 
 	100% {
 		transform: translateY(0);
+		opacity: 100;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
 		opacity: 100;
 	}
 }

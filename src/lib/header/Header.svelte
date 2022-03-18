@@ -12,17 +12,19 @@
 </script>
 
 <header>
-	<nav>
+	<nav class="relative">
 
 		<!-- Desktop View -->
 		<MediaQuery query={DESKTOP} let:matches>
 			{#if matches}
-				<ul class="list-none">
-					<li>Home</li>
-					<li>About</li>
-					<li>Projects</li>
-					<li>Contact</li>
+      <div class="side-menu absolute right-0 translate-x-28 top-0 translate-y-32">
+				<ul class="list-none rotate-90 flex text-lg text-white" style="font-family: 'Assistant', sans-serif;">
+					<li class="ml-4 hover:border-b-2 hover:font-semibold border-amber-100">Home</li>
+					<li class="ml-4 hover:border-b-2 hover:font-semibold border-amber-100">About</li>
+					<li class="ml-4 hover:border-b-2 hover:font-semibold border-amber-100">Projects</li>
+					<li class="ml-4 hover:border-b-2 hover:font-semibold border-amber-100">Contact</li>
 				</ul>
+      </div>
 			{/if}
 		</MediaQuery>
 
@@ -42,14 +44,15 @@
 									: 'invisible h-0'}"
 							>
 								<ul
-									class="trasition ease-linear duration-150 flex justify-center items-center h-full flex-col text-center text-white {isMobileNavShowing
+									class="trasition ease-linear duration-150 flex justify-center items-center h-full flex-col text-center text-white font-thin {isMobileNavShowing
 										? 'opacity-100'
 										: 'opacity-0'}"
+                  style="font-family: 'Assistant', sans-serif;"
 								>
-									<li>Home</li>
-									<li>About</li>
-									<li>Projects</li>
-									<li>Contact</li>
+									<li class="hover:font-semibold">Home</li>
+									<li class="hover:font-semibold">About</li>
+									<li class="hover:font-semibold">Projects</li>
+									<li class="hover:font-semibold">Contact</li>
 								</ul>
 							</div>
 						</div>
