@@ -5,29 +5,5 @@ module.exports = {
 	theme: {
 		extend: {}
 	},
-	plugins: [
-		// plugin(function ({ addComponents }) {
-		// 	addComponents({
-		// 		'.hamburger': {
-		// 			position: 'absolute',
-		// 			height: '2px',
-		// 			width: '30px',
-		// 			display: 'block',
-		// 			background: 'red',
-		// 		},
-		// 		'.hamburger:before': {
-		// 			content: '""',
-		// 			width: '100%',
-		// 			height: '100%',
-		// 			background: 'red',
-		// 		},
-		// 		'.hamburger:after': {
-		// 			content: '""',
-		// 			width: '100%',
-		// 			height: '100%',
-		// 			background: 'red',
-		// 		}
-		// 	})
-		// })
-	]
+	plugins: []
 };
