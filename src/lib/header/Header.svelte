@@ -31,8 +31,9 @@
 		<!-- Mobile View -->
 		<MediaQuery query={MOBILE} let:matches>
 			{#if matches}
+      <div class="flex justify-center">
 				<div
-					class="cursor-pointer w-2/3 h-10 fixed bottom-8 translate-x-1/4 bg-slate-700 z-10"
+					class="cursor-pointer w-64 h-10 fixed bottom-8 bg-slate-700 z-10"
 					on:click={handleShowMobileNav}
 				>
 					<div class="relative flex justify-center">
@@ -58,6 +59,7 @@
 						</div>
 					</div>
 				</div>
+        </div>
 			{/if}
 		</MediaQuery>
 
