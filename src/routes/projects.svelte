@@ -34,11 +34,11 @@
 	];
 </script>
 
-<section class="flex flex-col justify-center items-center h-screen">
+<section class="flex flex-col justify-center items-center h-screen bg-white">
 	<h2 class="freehand text-amber-100 text-5xl z-10">Projects</h2>
 	<div class="w-full h-auto bg-cover" style="background-image: url({background});">
 		<div
-			class="h-full assistant opacity-90 text-slate-700"
+			class="h-full assistant opacity-90 bg-cover w-full text-slate-700"
 			style="background-image: url({background2});"
 		>
 			<div class="font-semibold w-5/6 m-auto flex flex-col relative">
