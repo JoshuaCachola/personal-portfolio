@@ -34,9 +34,15 @@
 	];
 </script>
 
-<section class="flex flex-col justify-center items-center h-screen bg-white">
+<section class="flex flex-col justify-around items-center h-screen">
 	<h2 class="freehand text-amber-100 text-5xl z-10">Projects</h2>
-	<div class="w-full h-auto bg-cover" style="background-image: url({background});">
+  <div class="flex w-96 justify-between">
+    
+    {#each projects as projects, i}
+      <img src={projects.img} alt="project-img" class="h-20 w-20 cursor-pointer filter hover:h-24 hover:w-24" />
+    {/each}
+  </div>
+	<!-- <div class="w-full h-auto bg-cover" style="background-image: url({background});">
 		<div
 			class="h-full assistant opacity-90 bg-cover w-full text-slate-700"
 			style="background-image: url({background2});"
@@ -72,6 +78,6 @@
 					</div>
 				{/each}
 			</div>
-		</div>
-	</div>
+		</div> 
+	</div> -->
 </section>

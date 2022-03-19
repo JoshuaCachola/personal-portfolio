@@ -107,3 +107,11 @@ li:hover {
 		opacity: 100;
 	}
 }
+
+.filter:hover {
+	filter: invert(96%) sepia(7%) saturate(1682%) hue-rotate(327deg) brightness(104%) contrast(103%);
+}
+
+.filter {
+	filter: invert(99%) sepia(1%) saturate(2532%) hue-rotate(201deg) brightness(113%) contrast(100%);
+}
