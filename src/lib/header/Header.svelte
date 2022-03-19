@@ -17,7 +17,7 @@
 		<!-- Desktop View -->
 		<MediaQuery query={DESKTOP} let:matches>
 			{#if matches}
-      <div class="side-menu fixed top-0 right-0 translate-y-32 translate-x-28 z-10">
+      <div class="transition-fade-in fixed top-0 right-0 translate-y-32 translate-x-28 z-10">
 				<ul class="list-none rotate-90 flex text-lg text-white" style="font-family: 'Assistant', sans-serif;">
 					<li class="mr-4 hover:border-b-2 hover:font-semibold border-amber-100">Home</li>
 					<li class="mr-4 hover:border-b-2 hover:font-semibold border-amber-100">About</li>
