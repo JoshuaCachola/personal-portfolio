@@ -7,7 +7,7 @@
 </svelte:head>
 
 <section>
-	<div class="flex justify-center items-center h-screen">
+	<div class="flex justify-center items-center h-screen relative z-10">
 		<div class="hero-text max-w-lg text-amber-100">
 			<h1 class="text-2xl font-extralight" style="font-family: 'Assistant', sans-serif;">
 				<pre>Hi. My name is <span class="text-3xl" style="font-family: 'Freehand', cursive;">Joshua</span>.</pre>

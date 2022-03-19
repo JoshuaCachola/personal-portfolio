@@ -165,18 +165,6 @@ form > .fields > .field.half {
 		padding: 1.5em 0 0 1.5em;
 		width: calc(100% - 1.5em);
 	}
-
-	form > .fields > .field.half {
-		width: calc(100% - 1.5em);
-	}
-
-	form > .fields > .field.third {
-		width: calc(100% - 1.5em);
-	}
-
-	form > .fields > .field.quarter {
-		width: calc(100% - 1.5em);
-	}
 }
 
 input[type='text'],
@@ -208,8 +196,7 @@ textarea:invalid {
 
 input[type='text'],
 input[type='password'],
-input[type='email'],
-select {
+input[type='email'] {
 	height: 3em;
 }
 

@@ -10,7 +10,7 @@
 {#key currentProject}
   <MediaQuery query={DESKTOP} let:matches>
     {#if matches}
-      <div class="transition-fade-in">
+      <div class="transition-fade-in relative z-10">
         <div class="assistant text-white">
           <h2 class="font-semibold text-2xl">{currentProject.name}</h2>
           <p class="font-thin text-lg">{currentProject.description}</p>
@@ -35,7 +35,7 @@
   
     <MediaQuery query={MOBILE} let:matches>
     {#if matches}
-      <div class="transition-fade-in w-48">
+      <div class="transition-fade-in w-72 relative z-10">
         <div class="assistant text-white">
           <h2 class="font-semibold text-base">{currentProject.name}</h2>
           <p class="font-thin text-sm">{currentProject.description}</p>

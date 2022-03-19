@@ -1,42 +1,9 @@
 <script lang="ts">
-  // import MediaQuery from "svelte-media-query";
-  // import { DESKTOP, MOBILE } from "$lib/constants";
-	import background from "$lib/images/projects-bg.jpg"
   let width: number;
   $: isDesktop = width > 720 ? true : false;
-  
 </script>
 
-<!-- <section class="flex flex-col justify-evenly items-center h-screen relative" bind:clientWidth={width}>
-  <h2 class="freehand text-amber-100 {isDesktop ? 'text-5xl' : 'text-2xl'}">Contact</h2>
-  <div class="bg-cover w-1/2 h-1/2 flex justify-center items-center relative" style="background-image: url({background});">
-  <div class="w-full h-full absolute top-2 left-2 bg-black"></div>
-  <div class="w-full">
-    <form method="post" action="https://formspree.io/xayponkz">
-      <div class="flex">
-        <div class="flex">
-          <div>
-            <label for="name" class="assistant text-xl">Name</label>
-            <input type="text" name="name" id="name" class="bg-slate-700 text-white border-b-2 border-black" />
-          </div>
-          <div>
-            <label for="email" class="assistant text-xl">Email</label>
-            <input type="email" name="email" id="email" class="bg-slate-700 text-white" />
-          </div>
-        </div>
-        <div></div>
-          <label for="message" class="assistant text-xl">Message</label>
-          <textarea name="message" id="message" class="bg-slate-700 text-white"></textarea>
-      </div>
-      <ul class="actions">
-        <li><input type="submit" value="Send" class="primary" /></li>
-      </ul>
-    </form>
-    </div>
-  </div>
-  
-</section> -->
-<section class="flex flex-col justify-evenly items-center h-screen relative" bind:clientWidth={width}>
+<section class="flex flex-col justify-evenly items-center h-screen relative {!isDesktop && 'w-11/12 m-auto'}" bind:clientWidth={width}>
   <h2 class="freehand text-amber-100 {isDesktop ? 'text-5xl' : 'text-2xl'}">Contact</h2>
     <form method="post" action="https://formspree.io/xayponkz">
       <div class="fields">

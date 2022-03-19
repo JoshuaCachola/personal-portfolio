@@ -16,27 +16,25 @@
 <script lang="ts">
   import MediaQuery from "svelte-media-query";
   import { DESKTOP, MOBILE } from "$lib/constants";
-	import background from "$lib/about-bg.jpg"
 </script>
 
 <svelte:head>
 	<title>About</title>
 </svelte:head>
 
-<section class="flex justify-evenly items-center h-screen">
+<section class="flex justify-evenly flex-col items-center h-screen relative">
   <!-- Desktop view -->
   <MediaQuery query={DESKTOP} let:matches>
     {#if matches}
 			<h2 class="freehand text-amber-100 text-5xl">About</h2>
-			<div class="w-5/6 h-96" style="background-image: url({background});"></div>
     {/if}
   </MediaQuery>
 
   <!-- Mobile view -->
   <MediaQuery query={MOBILE} let:matches>
     {#if matches}
-			<h2 class="freehand text-amber-100 text-2xl">About</h2>
-			
+		<h2 class="freehand text-amber-100 text-2xl">About</h2>
+		
     {/if}
   </MediaQuery>
 </section>

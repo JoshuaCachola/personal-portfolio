@@ -38,7 +38,7 @@
   <MediaQuery query={MOBILE} let:matches>
     {#if matches}
     <div class="flex flex-col">
-      <h2 class="freehand text-amber-100 text-2xl z-10 underline text-center mb-8">Projects</h2>
+      <h2 class="freehand text-amber-100 text-3xl z-10 underline text-center mb-8">Projects</h2>
         {#if currentProject}
           <Project {currentProject} />
         {/if}
